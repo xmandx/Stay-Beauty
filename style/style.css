@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,300&display=swap');
+
+
+:root{
+    --font:'Inter Tight', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: var(--fontColor);
+}
+
+.info1 h2{
+    margin-right: 85px;
+}
+
+#orga{
+    margin-right: 50px;
+}
+
+#calm{
+    margin-right: 35px;
+}
+
+#efic{
+    margin-right: 45px;
+}
+
+#test{
+    margin-left: 45px;
+}
+
+body{
+    background-color: rgba(255, 248, 248, 0.774);
+    font-size: 30px;
+}
+
+nav {
+    background-color: #7FE1AC;
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--font);
+}
+.logo-box {
+    transform: scale(50%);
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.btn-box{
+    width: 80vw;
+    color: aliceblue;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.btn-box a{
+    margin: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    color: #138D4B;
+}
+
+.btn-box button{
+    margin: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    color: #138D4B;
+    font-size: 30px;
+    border: none;
+    font-family: var(--font);
+}
+
+.btn-box a:hover{
+    background-color: #138D4B;
+    color: #fff;
+}
+
+.btn-box button:hover{
+    background-color: #138D4B;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    color: #138D4B;
+}
+
+.img-main{
+    height: 100%;
+    width: 40vw;
+    background-image: url(../img/imgMain.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 60vw;
+}
+
+.info1,.info2{
+    background-color: #7FE1AC;
+    padding: 20px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: #138D4B;
+}
+
+.info2{
+    background-color: rgb(255, 245, 245);
+    color: #138D4B;
+}
+
+.info1 DIV,.info2 DIV{
+    width: 65VW;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info1-img, .info2-img{
+    height: 100vh;    
+    width: 40vw;
+    object-fit: cover;
+    background-image: url(../img/info1img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.info2-img{
+    background-image: url(../img/info2img.jpg);
+}
+
+/*configurações dos cards*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7FE1AC;
+    color: #138D4B;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cards h1 {
+    display: flex;
+    position: relative;
+    height: 100px;
+    margin: 50px 0px 0px 0px;
+}
+
+#expe{
+    color: #138D4B;
+    font-size: 40px;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: row;
+}
+.card-1{
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+.card-2{
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+.card-3{
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+.card-4{
+   background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+.card-1,.card-2,.card-3,.card-4{
+    height: 55vh;
+    width: 350px;
+    object-fit: cover;
+    margin: 20px;
+    position: relative;
+}
+
+.card-1 img,.card-2 img,.card-3 img,.card-4 img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-1 div, .card-2 div, .card-3 div, .card-4 div{
+    position: relative;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    display: none;
+    bottom: 102%;
+}
+
+.card-1:hover .oi,.card-2:hover .oi,.card-3:hover .oi,.card-4:hover .oi{
+    display: flex;
+}
+
+.cards h2{
+    transform: scale(30%);
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.oi{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.oi h1{
+    font-size: 30px;
+    margin-left: 55px;
+}
+
+/*modal login*/
+form{
+    color: #138D4B;
+}
+
+fieldset{
+    border: none;
+    font-size: 50px;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-size: 25px;
+}
+
+.modal-container{
+    top: 30px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 999;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    background-color: #7FE1AC;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.modal form fieldset{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.modal form{
+    display:flex;
+    flex-direction: column;
+}
+.modal form input{
+    height:30px;
+    font-size: 20px;
+    color: #000;
+}
+.modal button{
+    height:30px;
+    width:80px;
+    margin-top: 15px;
+}
+.btn_modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0;
+    width: 100%;
+}
+
+.btn_modal button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    overflow-y: hidden;
+}
+
+.active{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active .modal{
+    animation: modal .5s;
+}
+
+@keyframes modal {
+    form{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnOK{
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.btnOK:hover{
+    background-color: #138D4B;
+    color: #fff;
+}
+
+.btnClose{
+    background-color: #fff;
+    color: #138D4B;
+}
+
+.btnClose:hover{
+    background-color: #138D4B;
+    color: #fff;
+}
