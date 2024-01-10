@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/stay beauty.png"/>
+  <img src="img/readme.png"/>
 </p>
 
 # Stay Beauty
